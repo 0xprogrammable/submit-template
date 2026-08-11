@@ -37,7 +37,7 @@ These requirements define the minimum review package for one reusable template v
 - Unit and integration tests cover intended behavior and failure paths.
 - Fuzz or invariant tests cover value conservation and bounded configuration where applicable.
 - A threat model covers callback authentication, reentrancy, denial of service, price manipulation, custody, and privileged actions.
-- Deployment and source verification evidence is bound to the exact reviewed version.
+- Candidate rehearsal evidence is bound to the exact reviewed version. Official deployment and source verification remain later release states.
 - Unknown evidence remains pending. A local pass is not an independent audit.
 
 ## Fee and payout
@@ -46,7 +46,7 @@ These requirements define the minimum review package for one reusable template v
 - The creator payout address is explicit and supports the required chain.
 - Accrued creator revenue cannot be redirected by changing a future template version.
 - The Programmable and creator shares are separate liabilities.
-- A payout address change follows the published migration process or creates a new version.
+- A payout address change creates a new reviewed version unless the accepted version already binds the exact migration mechanism and authority, and the current migration verifies that recorded binding.
 
 ## Launch compatibility
 

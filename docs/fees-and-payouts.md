@@ -11,7 +11,7 @@ This is a planned policy until a specific template version and its fee path are 
 
 ## What must be recorded
 
-Every activated template version must publish:
+Every activated public template version must publish:
 
 - the fee basis and whether it is included in another configured fee;
 - the asset in which the fee accrues;
@@ -29,4 +29,4 @@ Gas, taxes, wallet custody, and any conversion of received assets remain the rec
 
 ## Partnership templates
 
-An activated partnership template uses 20 bps total, with 15 bps to the partner and 5 bps to Programmable. It does not add another 10 bps. Availability is route specific and requires a separately verified and activated partnership path. Partnership status is not created by a public template pull request.
+The intended partnership policy is 20 bps total, with 15 bps to the partner and 5 bps to Programmable. It does not add another 10 bps. Each partnership must separately record and activate its exact provider, template version, fee basis, recipients, and market path before this policy applies. Partnership status is not created by a public template pull request.

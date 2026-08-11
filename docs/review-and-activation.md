@@ -1,23 +1,37 @@
 # Review and activation
 
-## Lifecycle
+## Status model
 
-Possible states are `Draft`, `Submitted`, `Under review`, `Changes requested`, `Accepted`, `Deployed`, `Activated`, and `Available`. Later states occur only when their own requirements are met.
+Application, release, and availability are separate facts. A state is recorded only when its own requirements are met.
 
-Each state has a different meaning:
+Application states are `Draft`, `Submitted`, `Under review`, `Changes requested`, `Accepted`, `Withdrawn`, `Rejected`, and `Superseded`.
 
 - **Draft** means the creator is still preparing the package.
 - **Submitted** means one exact revision entered intake.
 - **Under review** means evidence is being checked. It is not approval.
 - **Changes requested** means the same revision is not ready. A source change creates a new target.
 - **Accepted** means the exact review target passed the published review policy.
-- **Deployed** means the recorded contracts exist and their code and source bindings were verified.
-- **Activated** means the exact version may be selected for new launches.
-- **Available** means the public product surface can prepare a launch for that active version.
+- **Withdrawn** means the submitter ended the application.
+- **Rejected** means the exact review target did not satisfy the published policy.
+- **Superseded** means a newer application replaced the recorded target.
+
+Release states are `Undeployed`, `Deployed`, `Verified`, and `Activated`.
+
+- **Undeployed** means no finalized deployment is recorded for the accepted version.
+- **Deployed** means a finalized deployment exists at the recorded chain and address.
+- **Verified** means source, artifacts, and runtime code correspond to the accepted version.
+- **Activated** means the recorded authority permits the exact version to be selected for new launches.
+
+Availability is `Unavailable`, `Available`, `Suspended`, or `Retired`.
+
+- **Unavailable** means the public product surface cannot prepare a launch for the version.
+- **Available** means the product surface can prepare a launch, subject to current per-launch checks.
+- **Suspended** means new launches are temporarily blocked while existing onchain records remain unchanged.
+- **Retired** means the version remains historical but cannot be selected for a new launch.
 
 ## Version boundary
 
-Acceptance never follows a moving branch. It binds one repository, commit, tree, artifact set, fee policy, payout identity, factory, launch profile, dependency set, and parameter envelope.
+Acceptance never follows a moving branch. It binds one repository, commit, tree, chain ID, artifact set, runtime identities, fee policy, payout identity, factory, launch profile, dependency set, and parameter envelope.
 
 Any material change creates a new version. Existing launches remain attached to the version they used.
 
@@ -35,8 +49,10 @@ An active template does not authorize arbitrary launches. Before each transactio
 
 These checks should complete during the launch flow. They do not require a new human review when the version and inputs remain unchanged.
 
+If any required check fails or is unavailable, no transaction may be prepared or submitted. Time-sensitive bindings must be checked again immediately before execution.
+
 ## Suspension and retirement
 
-Programmable may stop new launches for a version when current evidence no longer supports it. This does not rewrite or disable contracts and pools that already exist.
+Once implemented, the recorded suspension authority may block new launches for an exact version through the published control path. The resulting state, reason, and effective time or block must be recorded. Until then, suspension and retirement are planned policy states, not active controls. This does not rewrite or disable contracts and pools that already exist.
 
 A retired version remains part of the historical record but cannot be selected for a new launch.
