@@ -41,7 +41,7 @@ The intended public template policy is **20 bps (0.20%) total** for an activated
 | Template creator | 10 bps (0.10%) |
 | Programmable | 10 bps (0.10%) |
 
-This policy is planned and is not active until the template contracts, payout address, fee basis, fee policy, and exact version are verified and activated. It is the complete Programmable template share, not 20 bps plus another 10 bps. Revenue depends on actual use. Acceptance does not guarantee launches, trading volume, or income.
+This policy is planned and is not active until the template contracts, payout address, fee basis, fee policy, and exact version are verified and activated. This is the total fee under the planned public template policy, not 20 bps plus another 10 bps. Any separate pool or route fee must be disclosed independently. Revenue depends on actual use. Acceptance does not guarantee launches, trading volume, or income.
 
 Partnership templates use a separate policy and review path. They are not submitted through the public template process.
 
@@ -56,7 +56,7 @@ An application must identify one exact, public version of the template:
 3. Exact contracts, factories, runtime code hashes, and supported chain.
 4. Allowed creator inputs and hard parameter limits.
 5. Fee policy, payout address, custody, privileged roles, and upgrade controls.
-6. Tests, invariants, threat model, and deployment evidence.
+6. Tests, invariants, threat model, and candidate rehearsal evidence.
 7. License and confirmation that you may submit the source.
 
 The complete checklist is in [Template requirements](docs/requirements.md).

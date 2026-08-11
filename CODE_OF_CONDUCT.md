@@ -8,4 +8,4 @@ Keep security reports private until a fix can be prepared. Do not publish creden
 
 Maintainers may edit, hide, lock, or remove contributions that violate these expectations and may restrict participation when necessary to protect contributors or the project.
 
-Report conduct concerns privately to the repository owner.
+Use GitHub's report tools for conduct concerns and do not repost personal data. Use this repository's private vulnerability reporting channel only when the report concerns a security vulnerability.

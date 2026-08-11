@@ -6,4 +6,4 @@ Do not publish an unpatched exploit, credential, wallet secret, private endpoint
 
 Public issues are suitable for documentation errors, broken links, and non-sensitive workflow problems.
 
-This repository records applications and review evidence. Passing validation or review is not a safety guarantee or independent audit.
+Once intake opens, this repository will record applications and review evidence. Passing validation or review is not a safety guarantee or independent audit.
