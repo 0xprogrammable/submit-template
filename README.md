@@ -10,20 +10,20 @@
   Publish a reusable hook template that other people can launch on Programmable.
 </p>
 
+> [!IMPORTANT]
+> **Status: planned.** Template submissions and public template fee-share activation are not open yet.
+
 <p align="center">
-  <a href="#what-belongs-here"><strong>See what to submit</strong></a>
+  <a href="#what-belongs-here"><strong>Read what belongs here</strong></a>
   &nbsp;·&nbsp;
   <a href="docs/requirements.md">Read the requirements</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/0xprogrammable/hookbuilder">Build with Hookbuilder</a>
 </p>
 
-> [!IMPORTANT]
-> Template intake is being prepared. The requirements and review process are public, but new template pull requests are not open yet.
-
 ## What belongs here
 
-A template is a reusable launch product. You publish one reviewed version, define what future creators may configure, and let other people launch projects with it.
+A reusable launch template is one versioned product that other creators can configure and launch. It may include a hook, factory, application, or companion service, but every required component and configurable boundary must be reviewed together.
 
 | You want to | Use |
 | --- | --- |
@@ -41,7 +41,7 @@ The intended public template policy is **20 bps (0.20%) total** for an activated
 | Template creator | 10 bps (0.10%) |
 | Programmable | 10 bps (0.10%) |
 
-This policy is planned and is not active until the template contracts, payout address, fee policy, and exact version are verified and activated. Revenue depends on actual use. Approval does not guarantee launches, trading volume, or income.
+This policy is planned and is not active until the template contracts, payout address, fee basis, fee policy, and exact version are verified and activated. It is the complete Programmable template share, not 20 bps plus another 10 bps. Revenue depends on actual use. Acceptance does not guarantee launches, trading volume, or income.
 
 Partnership templates use a separate policy and review path. They are not submitted through the public template process.
 
@@ -68,16 +68,16 @@ The complete checklist is in [Template requirements](docs/requirements.md).
 3. Prepare the template application when intake opens.
 4. Automated checks validate the package and its source bindings.
 5. Review covers behavior, permissions, value flows, parameter limits, fees, and launch compatibility.
-6. An accepted version is deployed, verified, and activated separately.
+6. If accepted, deployment, verification, activation, and availability remain separate later states.
 7. Every launch performs its own currentness and parameter checks.
 
 A source, dependency, factory, fee, authority, or parameter-boundary change creates a new template version and a new review target.
 
 Read [Review and activation](docs/review-and-activation.md).
 
-## What approval means
+## What acceptance means
 
-Approval applies only to the exact version and parameter limits recorded by Programmable. It is not an audit, safety guarantee, endorsement, promise of availability, or promise of earnings. Deployment, activation, currentness, and each user launch remain separate facts.
+Acceptance applies only to the exact version and parameter limits recorded by Programmable. It is not an audit, safety guarantee, endorsement, promise of availability, or promise of earnings. Deployment, activation, currentness, and each user launch remain separate facts.
 
 ## Related repositories
 

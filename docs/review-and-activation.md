@@ -2,7 +2,7 @@
 
 ## Lifecycle
 
-`Draft → Submitted → Under review → Changes requested or accepted → Deployed → Activated → Available`
+Possible states are `Draft`, `Submitted`, `Under review`, `Changes requested`, `Accepted`, `Deployed`, `Activated`, and `Available`. Later states occur only when their own requirements are met.
 
 Each state has a different meaning:
 

@@ -7,7 +7,6 @@ Do not include secrets, wallet material, private RPC URLs, or personal data.
 
 - [ ] Documentation correction
 - [ ] Repository maintenance
-- [ ] Template application submitted after intake activation
 
 ## Summary
 
