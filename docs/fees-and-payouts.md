@@ -7,7 +7,7 @@ The intended public template policy is 20 bps (0.20%) total:
 - 10 bps (0.10%) to the template creator.
 - 10 bps (0.10%) to Programmable.
 
-This is a planned policy until a specific template version and its fee path are deployed, verified, and activated. The active onchain policy is the source of truth.
+This is a planned policy until a specific template version and its fee path are deployed, verified, and activated. It is not 20 bps plus another 10 bps. The active onchain policy and published fee basis are the source of truth.
 
 ## What must be recorded
 
@@ -29,4 +29,4 @@ Gas, taxes, wallet custody, and any conversion of received assets remain the rec
 
 ## Partnership templates
 
-Partnership templates use a separate negotiated policy. The current intended partnership split is 20 bps total, with 15 bps to the partner and 5 bps to Programmable. Partnership status is not created by a public template pull request.
+An activated partnership template uses 20 bps total, with 15 bps to the partner and 5 bps to Programmable. It does not add another 10 bps. Availability is route specific and requires a separately verified and activated partnership path. Partnership status is not created by a public template pull request.
