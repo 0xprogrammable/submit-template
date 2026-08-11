@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/0xprogrammable/submit-template/security/advisories/new
+    about: Report exploitable vulnerabilities privately.
+  - name: Ask a builder question
+    url: https://github.com/0xprogrammable/hookbuilder/discussions
+    about: Get help building or testing a Uniswap v4 hook.

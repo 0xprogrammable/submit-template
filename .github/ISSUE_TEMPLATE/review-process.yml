@@ -1,0 +1,21 @@
+name: Review process problem
+description: Report a reproducible, non-sensitive problem in the published template requirements or lifecycle.
+title: "review: "
+body:
+  - type: markdown
+    attributes:
+      value: Template intake is not open. Use this form only for the published requirements and review process.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain which rule is incomplete, contradictory, or impossible to apply.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link exact public sources or provide a minimal non-sensitive example.
+    validations:
+      required: true
