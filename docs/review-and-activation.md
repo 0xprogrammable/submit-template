@@ -37,7 +37,10 @@ Any material change creates a new version. Existing launches remain attached to 
 
 ## Per-launch checks
 
-An active template does not authorize arbitrary launches. Before each transaction, Programmable checks:
+> [!NOTE]
+> This section describes the planned launch contract. Public template intake and activation are not open yet.
+
+An active template will not authorize arbitrary launches. Before each transaction, Programmable will check:
 
 - the template version is still active;
 - deployed code and authorities still match the recorded version;
@@ -47,9 +50,9 @@ An active template does not authorize arbitrary launches. Before each transactio
 - simulation and provider health meet the launch profile requirements; and
 - the launch has not already been consumed or replayed.
 
-These checks should complete during the launch flow. They do not require a new human review when the version and inputs remain unchanged.
+These checks are designed to complete during the launch flow. They will not require a new human review when the version and inputs remain unchanged.
 
-If any required check fails or is unavailable, no transaction may be prepared or submitted. Time-sensitive bindings must be checked again immediately before execution.
+If any required check fails or is unavailable, no transaction will be prepared or submitted. Time-sensitive bindings will be checked again immediately before execution.
 
 ## Suspension and retirement
 
