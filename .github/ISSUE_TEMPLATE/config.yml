@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Submit one launch
+    url: https://github.com/0xprogrammable/submit-launch
+    about: Use Submit a Launch for one token or hook project that you want to launch yourself.
   - name: Report a security vulnerability
     url: https://github.com/0xprogrammable/submit-template/security/advisories/new
     about: Report exploitable vulnerabilities privately.
